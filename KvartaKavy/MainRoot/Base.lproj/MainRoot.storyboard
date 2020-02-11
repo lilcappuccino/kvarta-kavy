@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dat-gy-Sh4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NavigationFeedTableViewController-->
+        <scene sceneID="OT1-ca-7wC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feed" referencedIdentifier="NavigationFeedTableViewController" id="UvE-K6-drH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" image="circle.grid.3x3" catalog="system" selectedImage="pencil" id="SAX-ci-sxM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8w-1P-pIG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-296" y="567"/>
+        </scene>
+        <!--AboutViewController-->
+        <scene sceneID="Ptp-tf-HcM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AboutViewController" storyboardName="About" referencedIdentifier="AboutViewController" id="Eca-Mz-Vhb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="q9i-Oa-0qf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8D-Cc-PYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="563"/>
+        </scene>
+        <!--Root Tab Bar Controller-->
+        <scene sceneID="s5X-WM-9DH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dat-gy-Sh4" customClass="RootTabBarController" customModule="Kvarta_Kavy" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SB1-Sf-ezl">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UvE-K6-drH" kind="relationship" relationship="viewControllers" id="ZSP-oO-vpy"/>
+                        <segue destination="Eca-Mz-Vhb" kind="relationship" relationship="viewControllers" id="Wvo-Zw-9QT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KdY-fP-cnu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.grid.3x3" catalog="system" width="64" height="54"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

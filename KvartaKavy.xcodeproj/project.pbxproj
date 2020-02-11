@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		6F22A98523EF12700070FDAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22A98423EF12700070FDAF /* AppDelegate.swift */; };
-		6F22A98723EF12700070FDAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22A98623EF12700070FDAF /* SceneDelegate.swift */; };
-		6F22A98923EF12700070FDAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22A98823EF12700070FDAF /* ViewController.swift */; };
-		6F22A98C23EF12700070FDAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F22A98A23EF12700070FDAF /* Main.storyboard */; };
+		6F22A98C23EF12700070FDAF /* MainRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F22A98A23EF12700070FDAF /* MainRoot.storyboard */; };
 		6F22A98E23EF12720070FDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F22A98D23EF12720070FDAF /* Assets.xcassets */; };
 		6F22A99123EF12720070FDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F22A98F23EF12720070FDAF /* LaunchScreen.storyboard */; };
+		6F22A99D23EF13190070FDAF /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22A99C23EF13190070FDAF /* RootTabBarController.swift */; };
+		6F22A9A023EF13400070FDAF /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F22A99F23EF13400070FDAF /* Feed.storyboard */; };
+		6F22A9A323EF13C40070FDAF /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22A9A223EF13C40070FDAF /* FeedTableViewController.swift */; };
+		6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */; };
+		6FB4D0CF23EF30AC00B1D981 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */; };
+		6FB4D0D223EF663500B1D981 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D123EF663500B1D981 /* About.storyboard */; };
+		6FB4D0D423EF664500B1D981 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D323EF664500B1D981 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F22A98123EF12700070FDAF /* KvartaKavy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KvartaKavy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F22A98123EF12700070FDAF /* Kvarta Kavy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kvarta Kavy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F22A98423EF12700070FDAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F22A98623EF12700070FDAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F22A98823EF12700070FDAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6F22A98B23EF12700070FDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F22A98B23EF12700070FDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainRoot.storyboard; sourceTree = "<group>"; };
 		6F22A98D23EF12720070FDAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F22A99023EF12720070FDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F22A99223EF12720070FDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F22A99C23EF13190070FDAF /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		6F22A99F23EF13400070FDAF /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		6F22A9A223EF13C40070FDAF /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Style.swift"; sourceTree = "<group>"; };
+		6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		6FB4D0D123EF663500B1D981 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		6FB4D0D323EF664500B1D981 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +58,7 @@
 		6F22A98223EF12700070FDAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F22A98123EF12700070FDAF /* KvartaKavy.app */,
+				6F22A98123EF12700070FDAF /* Kvarta Kavy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +66,68 @@
 		6F22A98323EF12700070FDAF /* KvartaKavy */ = {
 			isa = PBXGroup;
 			children = (
+				6FB4D0CB23EF302200B1D981 /* Extension */,
+				6FB4D0D023EF661E00B1D981 /* About */,
+				6FB4D0CA23EF170F00B1D981 /* Core */,
+				6F22A99B23EF12C80070FDAF /* MainRoot */,
+				6F22A99E23EF132B0070FDAF /* Feed */,
+			);
+			path = KvartaKavy;
+			sourceTree = "<group>";
+		};
+		6F22A99B23EF12C80070FDAF /* MainRoot */ = {
+			isa = PBXGroup;
+			children = (
+				6F22A98A23EF12700070FDAF /* MainRoot.storyboard */,
+				6F22A99C23EF13190070FDAF /* RootTabBarController.swift */,
+			);
+			path = MainRoot;
+			sourceTree = "<group>";
+		};
+		6F22A99E23EF132B0070FDAF /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				6F22A9A123EF13770070FDAF /* FeedTable */,
+				6F22A99F23EF13400070FDAF /* Feed.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		6F22A9A123EF13770070FDAF /* FeedTable */ = {
+			isa = PBXGroup;
+			children = (
+				6F22A9A223EF13C40070FDAF /* FeedTableViewController.swift */,
+			);
+			path = FeedTable;
+			sourceTree = "<group>";
+		};
+		6FB4D0CA23EF170F00B1D981 /* Core */ = {
+			isa = PBXGroup;
+			children = (
 				6F22A98423EF12700070FDAF /* AppDelegate.swift */,
-				6F22A98623EF12700070FDAF /* SceneDelegate.swift */,
-				6F22A98823EF12700070FDAF /* ViewController.swift */,
-				6F22A98A23EF12700070FDAF /* Main.storyboard */,
 				6F22A98D23EF12720070FDAF /* Assets.xcassets */,
 				6F22A98F23EF12720070FDAF /* LaunchScreen.storyboard */,
 				6F22A99223EF12720070FDAF /* Info.plist */,
 			);
-			path = KvartaKavy;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6FB4D0CB23EF302200B1D981 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */,
+				6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6FB4D0D023EF661E00B1D981 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				6FB4D0D123EF663500B1D981 /* About.storyboard */,
+				6FB4D0D323EF664500B1D981 /* AboutViewController.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +147,7 @@
 			);
 			name = KvartaKavy;
 			productName = KvartaKavy;
-			productReference = 6F22A98123EF12700070FDAF /* KvartaKavy.app */;
+			productReference = 6F22A98123EF12700070FDAF /* Kvarta Kavy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,8 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F22A99123EF12720070FDAF /* LaunchScreen.storyboard in Resources */,
+				6FB4D0D223EF663500B1D981 /* About.storyboard in Resources */,
+				6F22A9A023EF13400070FDAF /* Feed.storyboard in Resources */,
 				6F22A98E23EF12720070FDAF /* Assets.xcassets in Resources */,
-				6F22A98C23EF12700070FDAF /* Main.storyboard in Resources */,
+				6F22A98C23EF12700070FDAF /* MainRoot.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +203,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F22A98923EF12700070FDAF /* ViewController.swift in Sources */,
+				6FB4D0D423EF664500B1D981 /* AboutViewController.swift in Sources */,
+				6FB4D0CF23EF30AC00B1D981 /* Color+Hex.swift in Sources */,
 				6F22A98523EF12700070FDAF /* AppDelegate.swift in Sources */,
-				6F22A98723EF12700070FDAF /* SceneDelegate.swift in Sources */,
+				6F22A9A323EF13C40070FDAF /* FeedTableViewController.swift in Sources */,
+				6F22A99D23EF13190070FDAF /* RootTabBarController.swift in Sources */,
+				6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6F22A98A23EF12700070FDAF /* Main.storyboard */ = {
+		6F22A98A23EF12700070FDAF /* MainRoot.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6F22A98B23EF12700070FDAF /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainRoot.storyboard;
 			sourceTree = "<group>";
 		};
 		6F22A98F23EF12720070FDAF /* LaunchScreen.storyboard */ = {
@@ -286,15 +354,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7693M9CNF;
-				INFOPLIST_FILE = KvartaKavy/Info.plist;
+				INFOPLIST_FILE = KvartaKavy/Core/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tasty.KvartaKavy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Kvarta Kavy";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,15 +373,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7693M9CNF;
-				INFOPLIST_FILE = KvartaKavy/Info.plist;
+				INFOPLIST_FILE = KvartaKavy/Core/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tasty.KvartaKavy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Kvarta Kavy";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
