@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,14 +13,21 @@
 		6F22A98E23EF12720070FDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F22A98D23EF12720070FDAF /* Assets.xcassets */; };
 		6F22A99123EF12720070FDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F22A98F23EF12720070FDAF /* LaunchScreen.storyboard */; };
 		6F22A99D23EF13190070FDAF /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22A99C23EF13190070FDAF /* RootTabBarController.swift */; };
-		6F22A9A023EF13400070FDAF /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F22A99F23EF13400070FDAF /* Feed.storyboard */; };
-		6F22A9A323EF13C40070FDAF /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22A9A223EF13C40070FDAF /* FeedTableViewController.swift */; };
+		6F22A9A023EF13400070FDAF /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F22A99F23EF13400070FDAF /* Article.storyboard */; };
+		6F22A9A323EF13C40070FDAF /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22A9A223EF13C40070FDAF /* ArticleListViewController.swift */; };
 		6F39202F23F86CAC0061396C /* Routerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39202E23F86CAC0061396C /* Routerable.swift */; };
 		6F39203123F86D420061396C /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203023F86D420061396C /* Viewable.swift */; };
 		6F39203323F86D6E0061396C /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203223F86D6E0061396C /* Presentable.swift */; };
 		6F39203523F86D8B0061396C /* Interactorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203423F86D8B0061396C /* Interactorable.swift */; };
 		6F39203723F86DC00061396C /* TableViewItemDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203623F86DC00061396C /* TableViewItemDataSource.swift */; };
 		6F39203923F870280061396C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F39203823F870280061396C /* GoogleService-Info.plist */; };
+		6F39203F23F8794A0061396C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203E23F8794A0061396C /* Article.swift */; };
+		6F39204123F87D3A0061396C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204023F87D3A0061396C /* DataStore.swift */; };
+		6F39204323F87D930061396C /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204223F87D930061396C /* Storable.swift */; };
+		6F39204523F896600061396C /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204423F8965F0061396C /* ApiError.swift */; };
+		6F39204723F8ACBE0061396C /* Storyboard+initViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */; };
+		6F39204A23F8ACF10061396C /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204923F8ACF10061396C /* NSObject+ClassName.swift */; };
+		6F39204C23F8AD660061396C /* ArticleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204B23F8AD660061396C /* ArticleListPresenter.swift */; };
 		6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */; };
 		6FB4D0CF23EF30AC00B1D981 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */; };
 		6FB4D0D223EF663500B1D981 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D123EF663500B1D981 /* About.storyboard */; };
@@ -37,14 +44,21 @@
 		6F22A99023EF12720070FDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F22A99223EF12720070FDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F22A99C23EF13190070FDAF /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
-		6F22A99F23EF13400070FDAF /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
-		6F22A9A223EF13C40070FDAF /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		6F22A99F23EF13400070FDAF /* Article.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
+		6F22A9A223EF13C40070FDAF /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		6F39202E23F86CAC0061396C /* Routerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routerable.swift; sourceTree = "<group>"; };
 		6F39203023F86D420061396C /* Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
 		6F39203223F86D6E0061396C /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		6F39203423F86D8B0061396C /* Interactorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactorable.swift; sourceTree = "<group>"; };
 		6F39203623F86DC00061396C /* TableViewItemDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItemDataSource.swift; sourceTree = "<group>"; };
 		6F39203823F870280061396C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6F39203E23F8794A0061396C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		6F39204023F87D3A0061396C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		6F39204223F87D930061396C /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		6F39204423F8965F0061396C /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+initViewController.swift"; sourceTree = "<group>"; };
+		6F39204923F8ACF10061396C /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		6F39204B23F8AD660061396C /* ArticleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListPresenter.swift; sourceTree = "<group>"; };
 		6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Style.swift"; sourceTree = "<group>"; };
 		6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		6FB4D0D123EF663500B1D981 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
@@ -78,7 +92,6 @@
 				189530BBB1549E2FC407D201 /* Pods-KvartaKavy.debug.xcconfig */,
 				E2BBDBDA5C97BF53F7647E2B /* Pods-KvartaKavy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,12 +116,15 @@
 		6F22A98323EF12700070FDAF /* KvartaKavy */ = {
 			isa = PBXGroup;
 			children = (
+				6F39203D23F879300061396C /* Entity */,
+				6F39203B23F878C50061396C /* DataStore */,
 				6F39203823F870280061396C /* GoogleService-Info.plist */,
-				6FB4D0CB23EF302200B1D981 /* Extension */,
-				6FB4D0D023EF661E00B1D981 /* About */,
 				6FB4D0CA23EF170F00B1D981 /* Core */,
+				6FB4D0CB23EF302200B1D981 /* Extension */,
 				6F22A99B23EF12C80070FDAF /* MainRoot */,
+				6FB4D0D023EF661E00B1D981 /* About */,
 				6F22A99E23EF132B0070FDAF /* Feed */,
+				6F39204423F8965F0061396C /* ApiError.swift */,
 			);
 			path = KvartaKavy;
 			sourceTree = "<group>";
@@ -125,18 +141,19 @@
 		6F22A99E23EF132B0070FDAF /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				6F22A9A123EF13770070FDAF /* FeedTable */,
-				6F22A99F23EF13400070FDAF /* Feed.storyboard */,
+				6F22A9A123EF13770070FDAF /* ArticleList */,
+				6F22A99F23EF13400070FDAF /* Article.storyboard */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
 		};
-		6F22A9A123EF13770070FDAF /* FeedTable */ = {
+		6F22A9A123EF13770070FDAF /* ArticleList */ = {
 			isa = PBXGroup;
 			children = (
-				6F22A9A223EF13C40070FDAF /* FeedTableViewController.swift */,
+				6F22A9A223EF13C40070FDAF /* ArticleListViewController.swift */,
+				6F39204B23F8AD660061396C /* ArticleListPresenter.swift */,
 			);
-			path = FeedTable;
+			path = ArticleList;
 			sourceTree = "<group>";
 		};
 		6F39202D23F86C730061396C /* Protocol */ = {
@@ -147,8 +164,25 @@
 				6F39203223F86D6E0061396C /* Presentable.swift */,
 				6F39203423F86D8B0061396C /* Interactorable.swift */,
 				6F39203623F86DC00061396C /* TableViewItemDataSource.swift */,
+				6F39204223F87D930061396C /* Storable.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6F39203B23F878C50061396C /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				6F39204023F87D3A0061396C /* DataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		6F39203D23F879300061396C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6F39203E23F8794A0061396C /* Article.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		6FB4D0CA23EF170F00B1D981 /* Core */ = {
@@ -168,6 +202,8 @@
 			children = (
 				6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */,
 				6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */,
+				6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */,
+				6F39204923F8ACF10061396C /* NSObject+ClassName.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -243,7 +279,7 @@
 			files = (
 				6F22A99123EF12720070FDAF /* LaunchScreen.storyboard in Resources */,
 				6FB4D0D223EF663500B1D981 /* About.storyboard in Resources */,
-				6F22A9A023EF13400070FDAF /* Feed.storyboard in Resources */,
+				6F22A9A023EF13400070FDAF /* Article.storyboard in Resources */,
 				6F22A98E23EF12720070FDAF /* Assets.xcassets in Resources */,
 				6F22A98C23EF12700070FDAF /* MainRoot.storyboard in Resources */,
 				6F39203923F870280061396C /* GoogleService-Info.plist in Resources */,
@@ -299,15 +335,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F39204123F87D3A0061396C /* DataStore.swift in Sources */,
+				6F39204323F87D930061396C /* Storable.swift in Sources */,
 				6F39203123F86D420061396C /* Viewable.swift in Sources */,
 				6FB4D0D423EF664500B1D981 /* AboutViewController.swift in Sources */,
 				6FB4D0CF23EF30AC00B1D981 /* Color+Hex.swift in Sources */,
+				6F39204A23F8ACF10061396C /* NSObject+ClassName.swift in Sources */,
 				6F22A98523EF12700070FDAF /* AppDelegate.swift in Sources */,
-				6F22A9A323EF13C40070FDAF /* FeedTableViewController.swift in Sources */,
+				6F22A9A323EF13C40070FDAF /* ArticleListViewController.swift in Sources */,
 				6F22A99D23EF13190070FDAF /* RootTabBarController.swift in Sources */,
+				6F39204C23F8AD660061396C /* ArticleListPresenter.swift in Sources */,
+				6F39204523F896600061396C /* ApiError.swift in Sources */,
 				6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */,
 				6F39202F23F86CAC0061396C /* Routerable.swift in Sources */,
+				6F39203F23F8794A0061396C /* Article.swift in Sources */,
 				6F39203723F86DC00061396C /* TableViewItemDataSource.swift in Sources */,
+				6F39204723F8ACBE0061396C /* Storyboard+initViewController.swift in Sources */,
 				6F39203323F86D6E0061396C /* Presentable.swift in Sources */,
 				6F39203523F86D8B0061396C /* Interactorable.swift in Sources */,
 			);
