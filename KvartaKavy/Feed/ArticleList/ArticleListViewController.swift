@@ -8,18 +8,18 @@
 
 import UIKit
 
-protocol FeedTableInputs: AnyObject {
-    func reloadTableView(tableViewDataSource: Int)
+protocol ArticleListViewInputs: AnyObject {
+    //func reloadTableView(tableViewDataSource: Int)
 }
 
-protocol FeedTableOutputs: AnyObject {
+protocol ArticleListViewOutputs: AnyObject {
     func viewDidLoad()
 }
 
 
-final class FeedTableViewController: UIViewController {
+final class ArticleListViewController: UIViewController {
     
-//    internal var presenter: ListViewOutputs?
+    internal var presenter: ArticleListViewOutputs?
 //    internal var tableViewDataSource: TableViewItemDataSource?
     
     @IBOutlet weak var tableView: UITableView!
@@ -28,7 +28,6 @@ final class FeedTableViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .black
         navigationController?.navigationBar.isTranslucent = false
-        print("VADIM")
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.topItem?.title = "KVARTA KAVY"
              navigationController?.navigationItem.largeTitleDisplayMode = .automatic
@@ -44,6 +43,13 @@ final class FeedTableViewController: UIViewController {
         tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "home-icon-not-active"), selectedImage: #imageLiteral(resourceName: "home-icon-active"))
         
         // Do any additional setup after loading the view.
+        DataSore.shared.getArticles() { result in
+            switch result {
+            case .failure(let failure): print(failure.localizedDescription)
+            case .success(let articleList): print(articleList.first?.title)
+            }
+        }
+        
         
     }
     
@@ -58,4 +64,12 @@ final class FeedTableViewController: UIViewController {
     }
     */
 
+}
+
+extension ArticleListViewController: ArticleListViewInputs{
+    
+}
+
+extension ArticleListViewController: Viewable {
+    static var storyboardName: StoryboardName = .article
 }

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--About View Controller-->
+        <!--Item-->
         <scene sceneID="EDR-tq-FvA">
             <objects>
                 <viewController storyboardIdentifier="AboutViewController" id="qmC-PM-4YK" customClass="AboutViewController" customModule="Kvarta_Kavy" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,10 +18,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="jP9-dW-PCG"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="tray.fill" catalog="system" id="VOz-ic-WE1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hI5-Zk-91z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1" y="124"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tray.fill" catalog="system" width="64" height="44"/>
+    </resources>
 </document>

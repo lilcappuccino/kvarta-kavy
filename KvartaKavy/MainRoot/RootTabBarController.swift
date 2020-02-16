@@ -15,6 +15,8 @@ class RootTabBarController: UITabBarController {
         tabBar.barTintColor = .background
         tabBar.isTranslucent = false
         tabBar.tintColor = .textTitle
+        
+    
 
         // Do any additional setup after loading the view.
     }

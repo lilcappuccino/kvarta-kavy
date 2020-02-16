@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol Viewable: AnyObject {
+protocol Viewable: AnyObject, StoryboardInstantiatable{
     func push(_ vc: UIViewController, animated: Bool)
     func present(_ vc: UIViewController, animated: Bool)
     func pop(animated: Bool)

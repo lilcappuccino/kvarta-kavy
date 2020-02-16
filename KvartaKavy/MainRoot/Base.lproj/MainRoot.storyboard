@@ -10,7 +10,7 @@
         <!--NavigationFeedTableViewController-->
         <scene sceneID="OT1-ca-7wC">
             <objects>
-                <viewControllerPlaceholder storyboardName="Feed" referencedIdentifier="NavigationFeedTableViewController" id="UvE-K6-drH" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Article" referencedIdentifier="NavigationFeedTableViewController" id="UvE-K6-drH" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" image="circle.grid.3x3" catalog="system" selectedImage="pencil" id="SAX-ci-sxM"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8w-1P-pIG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -33,12 +33,13 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dat-gy-Sh4" customClass="RootTabBarController" customModule="Kvarta_Kavy" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SB1-Sf-ezl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="UvE-K6-drH" kind="relationship" relationship="viewControllers" id="ZSP-oO-vpy"/>
-                        <segue destination="Eca-Mz-Vhb" kind="relationship" relationship="viewControllers" id="Wvo-Zw-9QT"/>
+                        <segue destination="UvE-K6-drH" kind="relationship" relationship="viewControllers" id="pVU-hH-QTR"/>
+                        <segue destination="Eca-Mz-Vhb" kind="relationship" relationship="viewControllers" id="hWa-IY-0jb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdY-fP-cnu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
