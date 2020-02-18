@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct Article: Codable {
+struct ArticleRemote: Codable {
     let imageUrl, description, title, text: String
     
     
-    func generateDictionary() -> [String: String]{
+    func generateDictionary() -> [String: String] {
         let dictionary: [String: String] = [ArticleKey.imageUrl.rawValue: self.imageUrl,
                                             ArticleKey.description.rawValue: self.description,
                                             ArticleKey.title.rawValue: self.title,

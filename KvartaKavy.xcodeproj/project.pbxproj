@@ -23,7 +23,7 @@
 		6F39203323F86D6E0061396C /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203223F86D6E0061396C /* Presentable.swift */; };
 		6F39203523F86D8B0061396C /* Interactorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203423F86D8B0061396C /* Interactorable.swift */; };
 		6F39203723F86DC00061396C /* TableViewItemDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203623F86DC00061396C /* TableViewItemDataSource.swift */; };
-		6F39203F23F8794A0061396C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203E23F8794A0061396C /* Article.swift */; };
+		6F39203F23F8794A0061396C /* ArticleRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203E23F8794A0061396C /* ArticleRemote.swift */; };
 		6F39204123F87D3A0061396C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204023F87D3A0061396C /* DataStore.swift */; };
 		6F39204323F87D930061396C /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204223F87D930061396C /* Storable.swift */; };
 		6F39204523F896600061396C /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204423F8965F0061396C /* ApiError.swift */; };
@@ -35,7 +35,7 @@
 		6FB4D0D223EF663500B1D981 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D123EF663500B1D981 /* About.storyboard */; };
 		6FB4D0D423EF664500B1D981 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D323EF664500B1D981 /* AboutViewController.swift */; };
 		8557889023FAFB0A00A669EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8557888E23FAFA5A00A669EB /* GoogleService-Info.plist */; };
-		8557889323FAFD2400A669EB /* ArticleRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557889223FAFD2400A669EB /* ArticleRealm.swift */; };
+		8557889323FAFD2400A669EB /* ArticleLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557889223FAFD2400A669EB /* ArticleLocal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +58,7 @@
 		6F39203223F86D6E0061396C /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		6F39203423F86D8B0061396C /* Interactorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactorable.swift; sourceTree = "<group>"; };
 		6F39203623F86DC00061396C /* TableViewItemDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItemDataSource.swift; sourceTree = "<group>"; };
-		6F39203E23F8794A0061396C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		6F39203E23F8794A0061396C /* ArticleRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRemote.swift; sourceTree = "<group>"; };
 		6F39204023F87D3A0061396C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		6F39204223F87D930061396C /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
 		6F39204423F8965F0061396C /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
@@ -70,8 +70,7 @@
 		6FB4D0D123EF663500B1D981 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		6FB4D0D323EF664500B1D981 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8557888E23FAFA5A00A669EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8557888F23FAFA6400A669EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8557889223FAFD2400A669EB /* ArticleRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRealm.swift; sourceTree = "<group>"; };
+		8557889223FAFD2400A669EB /* ArticleLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleLocal.swift; sourceTree = "<group>"; };
 		E2BBDBDA5C97BF53F7647E2B /* Pods-KvartaKavy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KvartaKavy.release.xcconfig"; path = "Target Support Files/Pods-KvartaKavy/Pods-KvartaKavy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,7 +168,6 @@
 		6F39202D23F86C730061396C /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				8557888F23FAFA6400A669EB /* GoogleService-Info.plist */,
 				6F39202E23F86CAC0061396C /* Routerable.swift */,
 				6F39203023F86D420061396C /* Viewable.swift */,
 				6F39203223F86D6E0061396C /* Presentable.swift */,
@@ -191,8 +189,8 @@
 		6F39203D23F879300061396C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				6F39203E23F8794A0061396C /* Article.swift */,
-				8557889223FAFD2400A669EB /* ArticleRealm.swift */,
+				6F39203E23F8794A0061396C /* ArticleRemote.swift */,
+				8557889223FAFD2400A669EB /* ArticleLocal.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -349,7 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8557889323FAFD2400A669EB /* ArticleRealm.swift in Sources */,
+				8557889323FAFD2400A669EB /* ArticleLocal.swift in Sources */,
 				6F39204123F87D3A0061396C /* DataStore.swift in Sources */,
 				6F39204323F87D930061396C /* Storable.swift in Sources */,
 				6F39203123F86D420061396C /* Viewable.swift in Sources */,
@@ -365,7 +363,7 @@
 				6F39204523F896600061396C /* ApiError.swift in Sources */,
 				6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */,
 				6F39202F23F86CAC0061396C /* Routerable.swift in Sources */,
-				6F39203F23F8794A0061396C /* Article.swift in Sources */,
+				6F39203F23F8794A0061396C /* ArticleRemote.swift in Sources */,
 				6F39203723F86DC00061396C /* TableViewItemDataSource.swift in Sources */,
 				6F39204723F8ACBE0061396C /* Storyboard+initViewController.swift in Sources */,
 				6F39203323F86D6E0061396C /* Presentable.swift in Sources */,

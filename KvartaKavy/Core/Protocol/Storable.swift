@@ -13,5 +13,5 @@ protocol Storable {
     var storage: Firestore? { get set}
     
     func add(articleDictionary: [String: String])
-    func getArticles(compentition: @escaping (Result<[Article], ApiError>)-> Void)
+    func getArticles(compentition: @escaping (Result<[ArticleRemote], ApiError>)-> Void)
 }
