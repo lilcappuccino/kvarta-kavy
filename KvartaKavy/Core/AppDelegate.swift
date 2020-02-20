@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import FirebaseFirestore
 
 
 @UIApplicationMain
@@ -24,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func configFirebase(){
         FirebaseApp.configure()
-        DataSore.shared.storage = Firestore.firestore()
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

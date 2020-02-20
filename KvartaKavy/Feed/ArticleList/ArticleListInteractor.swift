@@ -17,11 +17,7 @@ final class ArticleListInteractor: Interactorable {
     weak var presenter: ArticleListInteractorOutputs?
     
     func getArticles(completion: @escaping (Results<ArticleLocal>) -> Void){
-        DataSore.shared.getArticles(){
-        result in
-            resu
-        
-        }
+      
     }
     
 }

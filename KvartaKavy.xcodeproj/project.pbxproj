@@ -24,7 +24,7 @@
 		6F39203523F86D8B0061396C /* Interactorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203423F86D8B0061396C /* Interactorable.swift */; };
 		6F39203723F86DC00061396C /* TableViewItemDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203623F86DC00061396C /* TableViewItemDataSource.swift */; };
 		6F39203F23F8794A0061396C /* ArticleRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203E23F8794A0061396C /* ArticleRemote.swift */; };
-		6F39204123F87D3A0061396C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204023F87D3A0061396C /* DataStore.swift */; };
+		6F39204123F87D3A0061396C /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204023F87D3A0061396C /* RemoteDataStore.swift */; };
 		6F39204323F87D930061396C /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204223F87D930061396C /* Storable.swift */; };
 		6F39204523F896600061396C /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204423F8965F0061396C /* ApiError.swift */; };
 		6F39204723F8ACBE0061396C /* Storyboard+initViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */; };
@@ -34,6 +34,8 @@
 		6FB4D0CF23EF30AC00B1D981 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */; };
 		6FB4D0D223EF663500B1D981 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D123EF663500B1D981 /* About.storyboard */; };
 		6FB4D0D423EF664500B1D981 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D323EF664500B1D981 /* AboutViewController.swift */; };
+		6FF6422F23FF243D0065E65E /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6422E23FF243D0065E65E /* LocalDataStore.swift */; };
+		6FF6423123FF24C20065E65E /* DataStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6423023FF24C20065E65E /* DataStoreService.swift */; };
 		8557889023FAFB0A00A669EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8557888E23FAFA5A00A669EB /* GoogleService-Info.plist */; };
 		8557889323FAFD2400A669EB /* ArticleLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557889223FAFD2400A669EB /* ArticleLocal.swift */; };
 		85A111FE23FEF01B00A9E37D /* RealmResult+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A111FD23FEF01B00A9E37D /* RealmResult+Array.swift */; };
@@ -60,7 +62,7 @@
 		6F39203423F86D8B0061396C /* Interactorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactorable.swift; sourceTree = "<group>"; };
 		6F39203623F86DC00061396C /* TableViewItemDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItemDataSource.swift; sourceTree = "<group>"; };
 		6F39203E23F8794A0061396C /* ArticleRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRemote.swift; sourceTree = "<group>"; };
-		6F39204023F87D3A0061396C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		6F39204023F87D3A0061396C /* RemoteDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataStore.swift; sourceTree = "<group>"; };
 		6F39204223F87D930061396C /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
 		6F39204423F8965F0061396C /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+initViewController.swift"; sourceTree = "<group>"; };
@@ -70,6 +72,8 @@
 		6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		6FB4D0D123EF663500B1D981 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		6FB4D0D323EF664500B1D981 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		6FF6422E23FF243D0065E65E /* LocalDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
+		6FF6423023FF24C20065E65E /* DataStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreService.swift; sourceTree = "<group>"; };
 		8557888E23FAFA5A00A669EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8557889223FAFD2400A669EB /* ArticleLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleLocal.swift; sourceTree = "<group>"; };
 		85A111FD23FEF01B00A9E37D /* RealmResult+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmResult+Array.swift"; sourceTree = "<group>"; };
@@ -183,7 +187,9 @@
 		6F39203B23F878C50061396C /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
-				6F39204023F87D3A0061396C /* DataStore.swift */,
+				6F39204023F87D3A0061396C /* RemoteDataStore.swift */,
+				6FF6422E23FF243D0065E65E /* LocalDataStore.swift */,
+				6FF6423023FF24C20065E65E /* DataStoreService.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -352,18 +358,20 @@
 			files = (
 				85A111FE23FEF01B00A9E37D /* RealmResult+Array.swift in Sources */,
 				8557889323FAFD2400A669EB /* ArticleLocal.swift in Sources */,
-				6F39204123F87D3A0061396C /* DataStore.swift in Sources */,
+				6F39204123F87D3A0061396C /* RemoteDataStore.swift in Sources */,
 				6F39204323F87D930061396C /* Storable.swift in Sources */,
 				6F39203123F86D420061396C /* Viewable.swift in Sources */,
 				6FB4D0D423EF664500B1D981 /* AboutViewController.swift in Sources */,
 				6FB4D0CF23EF30AC00B1D981 /* Color+Hex.swift in Sources */,
 				6F23F46223F991430047B9AB /* ArticleListInteractor.swift in Sources */,
 				6F23F46023F984740047B9AB /* UIStoryboard+Name.swift in Sources */,
+				6FF6422F23FF243D0065E65E /* LocalDataStore.swift in Sources */,
 				6F39204A23F8ACF10061396C /* NSObject+ClassName.swift in Sources */,
 				6F22A98523EF12700070FDAF /* AppDelegate.swift in Sources */,
 				6F22A9A323EF13C40070FDAF /* ArticleListViewController.swift in Sources */,
 				6F22A99D23EF13190070FDAF /* RootTabBarController.swift in Sources */,
 				6F39204C23F8AD660061396C /* ArticleListPresenter.swift in Sources */,
+				6FF6423123FF24C20065E65E /* DataStoreService.swift in Sources */,
 				6F39204523F896600061396C /* ApiError.swift in Sources */,
 				6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */,
 				6F39202F23F86CAC0061396C /* Routerable.swift in Sources */,
