@@ -14,4 +14,5 @@ target 'KvartaKavy' do
   # Optionally, include the Swift extensions if you're using Swift. 
   pod 'FirebaseFirestoreSwift'
   pod 'RealmSwift'
+  pod 'SDWebImage', '~> 5.0'
 end
