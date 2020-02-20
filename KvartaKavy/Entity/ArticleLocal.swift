@@ -10,12 +10,14 @@ import Foundation
 import RealmSwift
 
 class ArticleLocal: Object {
+    @objc var id = ""
     @objc var imageUrl = ""
     @objc var itemDescription = ""
     @objc var title = ""
     @objc var  text = ""
     
-    init(imageUrl: String, itemDescription: String, title: String, text: String) {
+    init(id: String, imageUrl: String, itemDescription: String, title: String, text: String) {
+        self.id = id
         self.imageUrl = imageUrl
         self.itemDescription = itemDescription
         self.title = title

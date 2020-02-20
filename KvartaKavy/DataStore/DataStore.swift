@@ -28,12 +28,12 @@ class DataSore {
         }
     }
     
-   private func getFromRemoteDataStore(compentition: @escaping (Result<[ArticleRemote], ApiError>) -> Void){
-        guard let storage = storage else { return ()}
+   private func getFromRemoteDataStore(completion: @escaping (Result<[ArticleRemote], ApiError>) -> Void){
+        guard let storage = storage else { return }
         storage.collection(collectionName).getDocuments() { querySnapshot, error in
             if let err = error {
                 print("Error getting documents: \(err)")
-                compentition(.failure(.recieveNilBody))
+                completion(.failure(.recieveNilBody))
             } else {
                 var arrayList = [ArticleRemote]()
                 for document in querySnapshot!.documents {
@@ -41,47 +41,56 @@ class DataSore {
                     guard let response = document.data() as? [String: String] else { return }
                     arrayList.append(ArticleRemote(dictionary: response ))
                 }
-                compentition(.success(arrayList))
+                completion(.success(arrayList))
             }
         }
     }
     
-    func getArticles(compentition: @escaping (Result<[ArticleLocal], ApiError>) -> Void) {
+    func getArticles(completion: @escaping ([ArticleLocal]) -> Void) {
         getFromRemoteDataStore(){ result in
             switch result {
-            case .failure(let failure): print("DataSore \(#function) \(failure.localizedDescription)")
-            case .success(let response): self.add(remote: response); self.get(compentition: compentition)
+            case .failure(let failure): print("DataSore \(#function) \(failure.localizedDescription)");  self.get(completion: completion)
+            case .success(let response): self.deleteAllObject(); self.add(remote: response, completion: completion);
             }
         }
     }
     
     
     //MARK:-> Local datasotre
-    func get(compentition: @escaping (Result<[ArticleLocal], ApiError>) -> Void) {
+    func get(completion: @escaping ([ArticleLocal]) -> Void) {
          let realm = try! Realm()
-        let object = realm.objects(ArticleLocal.self)
-       
-                    
+        let object = realm.objects(ArticleLocal.self).toArray(ofType: ArticleLocal.self) as [ArticleLocal]
+        completion(object)
     }
     
-    func add(remote articles: [ArticleRemote]){
+    func add(remote articles: [ArticleRemote], completion:@escaping ([ArticleLocal]) -> Void){
         for article in articles {
             add(remote: article)
+        }
+        get(completion: completion)
+    }
+    
+    private func deleteAllObject(){
+        let realm = try! Realm()
+        try! realm.write {
+          realm.deleteAll()
         }
     }
     
     func add(remote article: ArticleRemote) {
-        add(imageUrl: article.imageUrl, itemDescription: article.description, title: article.title, text: article.text)
+        add(id: article.id, imageUrl: article.imageUrl, itemDescription: article.description, title: article.title, text: article.text)
     }
     
-    func add(imageUrl: String, itemDescription: String, title: String, text: String){
+    func add(id: String, imageUrl: String, itemDescription: String, title: String, text: String){
         let realm = try! Realm()
         try! realm.write(){
-            let localArticle = realm.create(ArticleLocal.self)
+            let localArticle = ArticleLocal()
+            localArticle.id = id
             localArticle.imageUrl = imageUrl
             localArticle.itemDescription = itemDescription
             localArticle.title = title
             localArticle.text = text
+            realm.add(localArticle)
         }
     }
     

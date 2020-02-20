@@ -43,13 +43,7 @@ final class ArticleListViewController: UIViewController {
         tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "home-icon-not-active"), selectedImage: #imageLiteral(resourceName: "home-icon-active"))
         
         // Do any additional setup after loading the view.
-        DataSore.shared.getArticles() { result in
-            switch result {
-            case .failure(let failure): print(failure.localizedDescription)
-            case .success(let articleList): print(articleList.first?.title)
-            }
-        }
-        
+       
         
     }
     

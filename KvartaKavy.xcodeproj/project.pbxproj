@@ -36,6 +36,7 @@
 		6FB4D0D423EF664500B1D981 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D323EF664500B1D981 /* AboutViewController.swift */; };
 		8557889023FAFB0A00A669EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8557888E23FAFA5A00A669EB /* GoogleService-Info.plist */; };
 		8557889323FAFD2400A669EB /* ArticleLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557889223FAFD2400A669EB /* ArticleLocal.swift */; };
+		85A111FE23FEF01B00A9E37D /* RealmResult+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A111FD23FEF01B00A9E37D /* RealmResult+Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		6FB4D0D323EF664500B1D981 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8557888E23FAFA5A00A669EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8557889223FAFD2400A669EB /* ArticleLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleLocal.swift; sourceTree = "<group>"; };
+		85A111FD23FEF01B00A9E37D /* RealmResult+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmResult+Array.swift"; sourceTree = "<group>"; };
 		E2BBDBDA5C97BF53F7647E2B /* Pods-KvartaKavy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KvartaKavy.release.xcconfig"; path = "Target Support Files/Pods-KvartaKavy/Pods-KvartaKavy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +218,7 @@
 				6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */,
 				6F39204923F8ACF10061396C /* NSObject+ClassName.swift */,
 				6F23F45F23F984740047B9AB /* UIStoryboard+Name.swift */,
+				85A111FD23FEF01B00A9E37D /* RealmResult+Array.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A111FE23FEF01B00A9E37D /* RealmResult+Array.swift in Sources */,
 				8557889323FAFD2400A669EB /* ArticleLocal.swift in Sources */,
 				6F39204123F87D3A0061396C /* DataStore.swift in Sources */,
 				6F39204323F87D930061396C /* Storable.swift in Sources */,
