@@ -10,14 +10,15 @@ import Foundation
 import RealmSwift
 
 protocol ArticleListInteractorOutputs: AnyObject{
-    //    func get()
 }
 
 final class ArticleListInteractor: Interactorable {
     weak var presenter: ArticleListInteractorOutputs?
     
-    func getArticles(completion: @escaping (Results<ArticleLocal>) -> Void){
-      
+    func getArticles(completion: @escaping ([ArticleLocal]) -> Void) {
+        DataStoreService.shared.getArticles(){ articles in
+            completion(articles)
+        }
     }
     
 }

@@ -33,7 +33,8 @@ extension ArticleListPresenter: ArticleListViewOutputs {
     
     
     
-extension ArticleListPresenter: ArticleListInteractorOutputs{
+extension ArticleListPresenter: ArticleListInteractorOutputs {
+ 
         
     }
     

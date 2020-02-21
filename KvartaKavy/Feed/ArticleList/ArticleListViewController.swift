@@ -24,6 +24,8 @@ final class ArticleListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var articles = [ArticleLocal]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
@@ -43,8 +45,13 @@ final class ArticleListViewController: UIViewController {
         tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "home-icon-not-active"), selectedImage: #imageLiteral(resourceName: "home-icon-active"))
         
         // Do any additional setup after loading the view.
+        tableView.register(ArticleListTableViewCell.self, forCellReuseIdentifier: "ArticleListTableViewCell")
+        tableView.dataSource = self
        
-        
+        DataStoreService.shared.getArticles(){ articles in
+            self.articles = articles
+            self.tableView.reloadData()
+        }
     }
     
 
@@ -57,7 +64,22 @@ final class ArticleListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+	
+}
 
+extension ArticleListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        articles.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleListTableViewCell", for: indexPath) as! ArticleListTableViewCell
+        let currentArticle = articles[indexPath.item]
+        cell.config(imageUrl: currentArticle.imageUrl, title: currentArticle.title, description: currentArticle.description)
+        return cell
+    }
+    
+    
 }
 
 extension ArticleListViewController: ArticleListViewInputs{
