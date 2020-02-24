@@ -15,6 +15,7 @@ class RootTabBarController: UITabBarController {
         tabBar.barTintColor = .background
         tabBar.isTranslucent = false
         tabBar.tintColor = .textTitle
+        self.viewControllers = [ArticleListRouter.createModule()]
         
     
 

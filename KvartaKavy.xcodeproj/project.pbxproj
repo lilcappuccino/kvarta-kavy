@@ -19,6 +19,8 @@
 		6F23F45E23F984570047B9AB /* ArticleListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F23F45D23F984570047B9AB /* ArticleListRouter.swift */; };
 		6F23F46023F984740047B9AB /* UIStoryboard+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F23F45F23F984740047B9AB /* UIStoryboard+Name.swift */; };
 		6F23F46223F991430047B9AB /* ArticleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F23F46123F991430047B9AB /* ArticleListInteractor.swift */; };
+		6F28BE0024006DD600CD0A9D /* ArticleListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F28BDFF24006DD600CD0A9D /* ArticleListDataSource.swift */; };
+		6F28FBE1240453D0000C19CB /* ArticleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F28FBDF240453D0000C19CB /* ArticleListTableViewCell.swift */; };
 		6F39202F23F86CAC0061396C /* Routerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39202E23F86CAC0061396C /* Routerable.swift */; };
 		6F39203123F86D420061396C /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203023F86D420061396C /* Viewable.swift */; };
 		6F39203323F86D6E0061396C /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39203223F86D6E0061396C /* Presentable.swift */; };
@@ -31,7 +33,6 @@
 		6F39204723F8ACBE0061396C /* Storyboard+initViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */; };
 		6F39204A23F8ACF10061396C /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204923F8ACF10061396C /* NSObject+ClassName.swift */; };
 		6F39204C23F8AD660061396C /* ArticleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204B23F8AD660061396C /* ArticleListPresenter.swift */; };
-		6F4DF05423FF2EA400157BAF /* ArticleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4DF05323FF2EA400157BAF /* ArticleListTableViewCell.swift */; };
 		6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */; };
 		6FB4D0CF23EF30AC00B1D981 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */; };
 		6FB4D0D223EF663500B1D981 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D123EF663500B1D981 /* About.storyboard */; };
@@ -59,6 +60,8 @@
 		6F23F45D23F984570047B9AB /* ArticleListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListRouter.swift; sourceTree = "<group>"; };
 		6F23F45F23F984740047B9AB /* UIStoryboard+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Name.swift"; sourceTree = "<group>"; };
 		6F23F46123F991430047B9AB /* ArticleListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListInteractor.swift; sourceTree = "<group>"; };
+		6F28BDFF24006DD600CD0A9D /* ArticleListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListDataSource.swift; sourceTree = "<group>"; };
+		6F28FBDF240453D0000C19CB /* ArticleListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewCell.swift; sourceTree = "<group>"; };
 		6F39202E23F86CAC0061396C /* Routerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routerable.swift; sourceTree = "<group>"; };
 		6F39203023F86D420061396C /* Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
 		6F39203223F86D6E0061396C /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
@@ -71,7 +74,6 @@
 		6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+initViewController.swift"; sourceTree = "<group>"; };
 		6F39204923F8ACF10061396C /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		6F39204B23F8AD660061396C /* ArticleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListPresenter.swift; sourceTree = "<group>"; };
-		6F4DF05323FF2EA400157BAF /* ArticleListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewCell.swift; sourceTree = "<group>"; };
 		6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Style.swift"; sourceTree = "<group>"; };
 		6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		6FB4D0D123EF663500B1D981 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
@@ -167,13 +169,22 @@
 		6F22A9A123EF13770070FDAF /* ArticleList */ = {
 			isa = PBXGroup;
 			children = (
+				6F28FBDE240453AF000C19CB /* Cell */,
 				6F22A9A223EF13C40070FDAF /* ArticleListViewController.swift */,
 				6F39204B23F8AD660061396C /* ArticleListPresenter.swift */,
 				6F23F45D23F984570047B9AB /* ArticleListRouter.swift */,
 				6F23F46123F991430047B9AB /* ArticleListInteractor.swift */,
-				6F4DF05323FF2EA400157BAF /* ArticleListTableViewCell.swift */,
+				6F28BDFF24006DD600CD0A9D /* ArticleListDataSource.swift */,
 			);
 			path = ArticleList;
+			sourceTree = "<group>";
+		};
+		6F28FBDE240453AF000C19CB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6F28FBDF240453D0000C19CB /* ArticleListTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		6F39202D23F86C730061396C /* Protocol */ = {
@@ -367,6 +378,7 @@
 				6F39204123F87D3A0061396C /* RemoteDataStore.swift in Sources */,
 				6F39204323F87D930061396C /* Storable.swift in Sources */,
 				6F10B0B023FF371800358C2A /* TableView+RegisterCell.swift in Sources */,
+				6F28BE0024006DD600CD0A9D /* ArticleListDataSource.swift in Sources */,
 				6F39203123F86D420061396C /* Viewable.swift in Sources */,
 				6FB4D0D423EF664500B1D981 /* AboutViewController.swift in Sources */,
 				6FB4D0CF23EF30AC00B1D981 /* Color+Hex.swift in Sources */,
@@ -379,9 +391,9 @@
 				6F22A99D23EF13190070FDAF /* RootTabBarController.swift in Sources */,
 				6F39204C23F8AD660061396C /* ArticleListPresenter.swift in Sources */,
 				6FF6423123FF24C20065E65E /* DataStoreService.swift in Sources */,
-				6F4DF05423FF2EA400157BAF /* ArticleListTableViewCell.swift in Sources */,
 				6F39204523F896600061396C /* ApiError.swift in Sources */,
 				6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */,
+				6F28FBE1240453D0000C19CB /* ArticleListTableViewCell.swift in Sources */,
 				6F39202F23F86CAC0061396C /* Routerable.swift in Sources */,
 				6F39203F23F8794A0061396C /* ArticleRemote.swift in Sources */,
 				6F39203723F86DC00061396C /* TableViewItemDataSource.swift in Sources */,

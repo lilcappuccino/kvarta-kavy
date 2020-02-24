@@ -15,9 +15,9 @@ protocol ArticleListInteractorOutputs: AnyObject{
 final class ArticleListInteractor: Interactorable {
     weak var presenter: ArticleListInteractorOutputs?
     
-    func getArticles(completion: @escaping ([ArticleLocal]) -> Void) {
-        DataStoreService.shared.getArticles(){ articles in
-            completion(articles)
+    func getArticles(completion: @escaping (Result<[ArticleRemote], ApiError>) -> Void) {
+        RemoteDataStore.shared.getFromRemoteDataStore(){ result in
+            completion(result)
         }
     }
     

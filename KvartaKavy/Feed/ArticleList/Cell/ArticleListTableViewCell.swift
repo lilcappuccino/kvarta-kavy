@@ -2,7 +2,7 @@
 //  ArticleListTableViewCell.swift
 //  KvartaKavy
 //
-//  Created by dewill on 20.02.2020.
+//  Created by dewill on 24.02.2020.
 //  Copyright © 2020 lilcappucc. All rights reserved.
 //
 
@@ -10,16 +10,15 @@ import UIKit
 import SDWebImage
 
 class ArticleListTableViewCell: UITableViewCell {
-    @IBOutlet weak var itemView: UIView!
+    static let identifier = "ArticleListTableViewCell"
+    
+    @IBOutlet weak var view: UIView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var itemImageView: UIImageView!
-    @IBOutlet weak var descriptionLabel: UILabel!
-
+    @IBOutlet weak var articleImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        itemView.layer.cornerRadius = 12
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,10 +27,11 @@ class ArticleListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func config(imageUrl: String, title: String, description: String) {
-        itemImageView.sd_setImage(with: URL(string: imageUrl)!, completed: nil)
+    func config(imageUrl: String, title: String, description: String){
+        if let url = URL(string: imageUrl){
+            articleImageView.sd_setImage(with: url, completed: nil)
+        }
         titleLabel.text = title
-        descriptionLabel.text = description
     }
-
+    
 }

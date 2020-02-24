@@ -15,12 +15,15 @@ class RemoteDataStore {
     private let collectionName = "article-list"
     
     
-    init() {
+    private  init() {
         storage = Firestore.firestore()
     }
     
+    static let shared = RemoteDataStore()
     
-    internal func getFromRemoteDataStore(completion: @escaping (Result<[ArticleRemote], ApiError>) -> Void){
+    
+    
+    func getFromRemoteDataStore(completion: @escaping (Result<[ArticleRemote], ApiError>) -> Void){
         guard let storage = storage else { return }
         storage.collection(collectionName).getDocuments() { [weak self] querySnapshot, error in
             if let err = error { self?.onFailure(error: err, completion: completion)
@@ -40,7 +43,7 @@ class RemoteDataStore {
         }
     }
     
-
+    
     private func onFailure(error: Error, completion: @escaping (Result<[ArticleRemote], ApiError>) -> Void) {
         print("Error getting documents: \(error)")
         completion(.failure(.recieveNilBody))
