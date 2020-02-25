@@ -29,7 +29,7 @@ final class ArticleListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = ArticleListDataSource()
-        tableView.register(ArticleListTableViewCell.self, forCellReuseIdentifier: ArticleListTableViewCell.identifier)
+        tableView.register(cellType: ArticleListTableViewCell.self, bundle: nil)
         presenter?.viewDidLoad()
         view.backgroundColor = .black
         navigationController?.navigationBar.isTranslucent = false

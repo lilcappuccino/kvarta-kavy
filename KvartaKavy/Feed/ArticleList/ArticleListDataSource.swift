@@ -22,7 +22,7 @@ extension ArticleListDataSource: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = articles[indexPath.item]
-        let cell: ArticleListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ArticleListTableViewCell", for: indexPath) as! ArticleListTableViewCell
+        let cell = tableView.dequeueReusableCell(with: ArticleListTableViewCell.self, for: indexPath)
         cell.config(imageUrl: item.imageUrl, title: item.title, description: item.description)
         return cell
     }
