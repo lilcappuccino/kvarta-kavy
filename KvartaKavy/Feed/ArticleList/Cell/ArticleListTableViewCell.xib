@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,13 +19,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nuf-ZR-vmU">
-                        <rect key="frame" x="24" y="18" width="66" height="66"/>
+                        <rect key="frame" x="24" y="18" width="66" height="49.5"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="15m-VJ-3sM">
-                                <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
+                                <rect key="frame" x="0.0" y="0.0" width="66" height="49.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gk-o7-8EW">
-                                <rect key="frame" x="8" y="35" width="50" height="23"/>
+                                <rect key="frame" x="8" y="18.5" width="50" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                             <constraint firstAttribute="bottom" secondItem="1gk-o7-8EW" secondAttribute="bottom" constant="8" id="kRy-ko-u5b"/>
                             <constraint firstItem="15m-VJ-3sM" firstAttribute="width" secondItem="Nuf-ZR-vmU" secondAttribute="width" id="pOt-It-C8H"/>
                             <constraint firstAttribute="trailing" secondItem="15m-VJ-3sM" secondAttribute="trailing" id="pa7-Ko-nJp"/>
-                            <constraint firstAttribute="width" secondItem="Nuf-ZR-vmU" secondAttribute="height" multiplier="1:1" id="wgX-VP-70c"/>
+                            <constraint firstAttribute="width" secondItem="Nuf-ZR-vmU" secondAttribute="height" multiplier="4:3" id="wgX-VP-70c"/>
                         </constraints>
                     </view>
                 </subviews>

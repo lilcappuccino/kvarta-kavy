@@ -9,6 +9,8 @@ import UIKit
 import SDWebImage
 
 class ArticleListTableViewCell: UITableViewCell {
+    
+    //MARK:-> Property
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var articleImageView: UIImageView!
@@ -40,4 +42,6 @@ class ArticleListTableViewCell: UITableViewCell {
             articleImageView.sd_setImage(with: url, completed: nil)
         }
     }
+    
+   
 }

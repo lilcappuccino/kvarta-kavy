@@ -9,7 +9,6 @@
 import UIKit
 
 protocol ArticleListViewInputs: AnyObject {
-    //func reloadTableView(tableViewDataSource: Int)
     func reloadTableView(articles: [ArticleRemote])
 }
 
@@ -28,10 +27,22 @@ final class ArticleListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource = ArticleListDataSource()
-        tableView.register(cellType: ArticleListTableViewCell.self, bundle: nil)
         presenter?.viewDidLoad()
         view.backgroundColor = .black
+        configTable()
+        configNavigationBar()
+        
+    }
+    
+    private func configTable(){
+        tableView.backgroundColor = .clear
+        dataSource = ArticleListDataSource()
+        tableView.delegate = dataSource
+        tableView.dataSource = dataSource
+        tableView.register(cellType: ArticleListTableViewCell.self, bundle: nil)
+    }
+    
+    private func configNavigationBar(){
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.topItem?.title = "KVARTA KAVY"
@@ -40,47 +51,31 @@ final class ArticleListViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.textTitle]
-        tableView.backgroundColor = .clear
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.textTitle]
         navigationController?.navigationBar.barTintColor = .background
-        
-        
         tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "home-icon-not-active"), selectedImage: #imageLiteral(resourceName: "home-icon-active"))
-        
-        // Do any additional setup after loading the view.
-        
-//        guard dataStore != nil else { return }
-        tableView.dataSource = dataSource
-        
-        
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 
 extension ArticleListViewController: ArticleListViewInputs {
     func reloadTableView(articles: [ArticleRemote]) {
         dataSource?.articles = articles
+        dataSource?.articles.append(contentsOf: articles)
+        dataSource?.articles.append(contentsOf: articles)
+        dataSource?.articles.append(contentsOf: articles)
+        dataSource?.articles.append(contentsOf: articles)
+        dataSource?.articles.append(contentsOf: articles)
         tableView.reloadData()
     }
     
 }
 
-
-
 extension ArticleListViewController: Viewable {
     static var storyboardName: StoryboardName = .article
 }
 
-    
+
+
+
 
