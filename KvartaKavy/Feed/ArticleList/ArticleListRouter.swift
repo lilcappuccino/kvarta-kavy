@@ -8,20 +8,6 @@
 
 import Foundation
 
-class ArticleListRouter {
-    static func createModule() -> ArticleListViewController{
-        let view = ArticleListViewController.instantiate()
-        let interactor = ArticleListInteractor()
-           let dependencies = ArticleListDependencies(interactor: interactor, router: ArticleListRouterOutput(view))
-        let presenter = ArticleListPresenter(view: view, dependencies: dependencies)
-        view.presenter = presenter
-        interactor.presenter = presenter
-        return view
-    }
-}
-
-
-
 final class ArticleListRouterOutput: Routerable {
 
     private(set) weak var view: Viewable!

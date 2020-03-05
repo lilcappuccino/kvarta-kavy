@@ -15,14 +15,14 @@ public enum StoryboardInstantiateType {
 }
 
 public protocol StoryboardInstantiatable {
-    static var storyboardName: StoryboardName { get }
+    static var storyboardName: UIStoryboard.Name { get }
     static var storyboardBundle: Bundle { get }
     static var instantiateType: StoryboardInstantiateType { get }
 }
 
 public extension StoryboardInstantiatable where Self: NSObject {
-    static var storyboardName: StoryboardName {
-        if let storyboard = StoryboardName(rawValue: className){
+    static var storyboardName: UIStoryboard.Name {
+        if let storyboard = UIStoryboard.Name(rawValue: className){
             return storyboard
         }
         else { fatalError("\(#function) has not stroyboard with name \(className)")}

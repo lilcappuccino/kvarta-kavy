@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 
-extension UIStoryboard {
+public extension UIStoryboard {
     
-
-}
-
-public enum StoryboardName: String {
-    case about = "About"
-    case article = "Article"
+    enum Name: String {
+        case about = "AboutStoryboard"
+        case article = "ArticleStoryboard"
+        case authentication = "AuthenticationStoryboard"
+        case sale = "Sale"
+    }
+    
 }

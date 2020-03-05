@@ -71,7 +71,7 @@ extension ArticleListViewController: ArticleListViewInputs {
 }
 
 extension ArticleListViewController: Viewable {
-    static var storyboardName: StoryboardName = .article
+    static var storyboardName: UIStoryboard.Name = .article
 }
 
 

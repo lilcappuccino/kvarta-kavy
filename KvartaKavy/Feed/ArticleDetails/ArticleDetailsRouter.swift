@@ -15,8 +15,6 @@ struct ArticleDetailsRouterInput {
         let view = ArticleDetailsCongigurator.createModule(entity: ArticleDetailsEntity(imageUrl: imageUrl, title: title, text: text))
         from.push(view, animated: true)
     }
-    
-
 }
 
 final class ArticleDetailsRouterOutput: Routerable {
@@ -29,29 +27,4 @@ final class ArticleDetailsRouterOutput: Routerable {
 
 
 }
-
-//
-//final class StartLoginRouter: Routerable {
-//
-//    private(set) weak var view: Viewable!
-//
-//    init(_ view: Viewable) {
-//        self.view = view
-//    }
-//
-//    func push(from: Viewable) {
-//        let view = StartLoginCongigurator.createModule()
-//        from.push(view, animated: true)
-//    }
-//
-//    func pushOverFullScrren(from: Viewable){
-//        let vc = StartLoginCongigurator.createModule()
-//        vc.modalPresentationStyle = .overFullScreen
-//        from.present(vc, animated: false)
-//    }
-////
-////    func transitionDetail(gitHubRepository: GitHubRepository) {
-////        DetailRouterInput().push(from: view, entryEntity: DetailEntryEntity(gitHubRepository: gitHubRepository))
-////    }
-//}
 

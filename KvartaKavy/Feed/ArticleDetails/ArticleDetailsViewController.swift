@@ -104,7 +104,7 @@ extension ArticleDetailsViewController: ArticleDetailsViewInputs {
 }
 
 extension ArticleDetailsViewController: Viewable {
-    static var storyboardName: StoryboardName = .article
+    static var storyboardName: UIStoryboard.Name = .article
 }
 
 extension ArticleDetailsViewController: UIScrollViewDelegate {
