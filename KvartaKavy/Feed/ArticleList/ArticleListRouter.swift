@@ -29,9 +29,9 @@ final class ArticleListRouterOutput: Routerable {
     init(_ view: Viewable) {
         self.view = view
     }
-//
-//    func transitionDetail(gitHubRepository: GitHubRepository) {
-//        DetailRouterInput().push(from: view, entryEntity: DetailEntryEntity(gitHubRepository: gitHubRepository))
-//    }
+    
+    func articleDetails(imageUrl: String, title: String, text: String){
+        ArticleDetailsRouterInput().push(from: view, imageUrl: imageUrl, title: title, text: text)
+    }
 }
 

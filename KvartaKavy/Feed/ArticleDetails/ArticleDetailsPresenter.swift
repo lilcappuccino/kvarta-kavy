@@ -16,31 +16,43 @@ typealias ArticleDetailsDependencies = (
 final class ArticleDetailsPresenter: Presenterable {
     private weak var view: ArticleDetailsViewInputs!
     let dependencies: ArticleDetailsDependencies
-
-       init(view: ArticleDetailsViewInputs,
-            dependencies: ArticleDetailsDependencies)
-       {
-           self.view = view
-           self.dependencies = dependencies
-       }
+    let entity: ArticleDetailsEntity
+    
+    init(view: ArticleDetailsViewInputs,
+         dependencies: ArticleDetailsDependencies, entity: ArticleDetailsEntity)
+    {
+        self.view = view
+        self.dependencies = dependencies
+        self.entity = entity
+    }
 }
 
 //MARK: View
 extension ArticleDetailsPresenter: ArticleDetailsViewOutputs {
-    func skipButtonLocalize() -> String {
-        return ""
+    func getTitle() -> String {
+        entity.title
     }
+    
+    func getText() -> String {
+        entity.text
+    }
+    
+    func getImageUrl() -> URL {
+        URL(string: entity.imageUrl)!
+    }
+    
+    
     
     func viewDidLoad() {
-    
-    }
-}
-    
-    
-    
-extension ArticleDetailsPresenter: ArticleDetailsInteractorOutputs{
         
     }
+}
+
+
+
+extension ArticleDetailsPresenter: ArticleDetailsInteractorOutputs {
     
-    
+}
+
+
 

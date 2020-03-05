@@ -18,37 +18,40 @@ final class ArticleListPresenter: Presenterable {
     let dependencies: ArticleListDependencies
     
     private var articles = [ArticleRemote]()
+    
+    
+    init(view: ArticleListViewInputs,
+         dependencies: ArticleListDependencies)
     {
-        didSet{
-            
-        }
+        self.view = view
+        self.dependencies = dependencies
     }
-
-       init(view: ArticleListViewInputs,
-            dependencies: ArticleListDependencies)
-       {
-           self.view = view
-           self.dependencies = dependencies
-       }
 }
 
 extension ArticleListPresenter: ArticleListViewOutputs {
+    
     func viewDidLoad() {
         dependencies.interactor.getArticles(){ result in
             switch result {
-            case .success(let articles): self.view.reloadTableView(articles: articles)
+            case .success(let articles):  self.articles = articles; self.view.reloadTableView(articles: articles)
             case .failure(let error): print(error.localizedDescription)
             }
         }
     }
-}
     
-    
-    
-extension ArticleListPresenter: ArticleListInteractorOutputs {
- 
-        
+    func showArticleDetailsView(cellIndex: Int) {
+        let selectedArticle = articles[cellIndex]
+        dependencies.router.articleDetails(imageUrl: selectedArticle.imageUrl, title: selectedArticle.title, text: selectedArticle.text)
     }
     
+}
+
+
+
+extension ArticleListPresenter: ArticleListInteractorOutputs {
     
+    
+}
+
+
 

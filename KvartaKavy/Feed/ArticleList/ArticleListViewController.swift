@@ -14,6 +14,7 @@ protocol ArticleListViewInputs: AnyObject {
 
 protocol ArticleListViewOutputs: AnyObject {
     func viewDidLoad()
+    func showArticleDetailsView(cellIndex: Int)
 }
 
 
@@ -21,6 +22,7 @@ final class ArticleListViewController: UIViewController {
     
     internal var presenter: ArticleListViewOutputs?
     private var dataSource: ArticleListDataSource!
+    var isShowingFirstTime = true
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -37,7 +39,7 @@ final class ArticleListViewController: UIViewController {
     private func configTable(){
         tableView.backgroundColor = .clear
         dataSource = ArticleListDataSource()
-        tableView.delegate = dataSource
+        tableView.delegate = self
         tableView.dataSource = dataSource
         tableView.register(cellType: ArticleListTableViewCell.self, bundle: nil)
     }
@@ -62,18 +64,41 @@ extension ArticleListViewController: ArticleListViewInputs {
     func reloadTableView(articles: [ArticleRemote]) {
         dataSource?.articles = articles
         dataSource?.articles.append(contentsOf: articles)
-        dataSource?.articles.append(contentsOf: articles)
-        dataSource?.articles.append(contentsOf: articles)
-        dataSource?.articles.append(contentsOf: articles)
-        dataSource?.articles.append(contentsOf: articles)
+          dataSource?.articles.append(contentsOf: articles)
+          dataSource?.articles.append(contentsOf: articles)
         tableView.reloadData()
     }
-    
 }
 
 extension ArticleListViewController: Viewable {
     static var storyboardName: StoryboardName = .article
 }
+
+
+//MARK:-> UITableViewDelegate
+extension ArticleListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if  indexPath.row > 1 || !isShowingFirstTime {
+            isShowingFirstTime = false
+            return
+            
+        }
+        
+        let animation = Animator.makeMoveUpWithBounce(rowHeight: cell.frame.height, duration: 1.0, delayFactor: 0.05)
+        let animator = Animator(animation: animation)
+        animator.animate(cell: cell, at: indexPath, in: tableView)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showArticleDetailsView(cellIndex: indexPath.item)
+    }
+    
+    
+}
+
+
+
 
 
 

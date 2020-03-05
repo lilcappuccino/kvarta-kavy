@@ -14,4 +14,6 @@ protocol ArticleDetailsInteractorOutputs: AnyObject{
 final class ArticleDetailsInteractor: Interactorable {
     weak var presenter: ArticleDetailsInteractorOutputs?
     
+    
+    
 }

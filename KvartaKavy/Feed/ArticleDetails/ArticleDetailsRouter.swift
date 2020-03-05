@@ -11,21 +11,12 @@ import Foundation
 
 struct ArticleDetailsRouterInput {
 
-    func push(from: Viewable) {
-        let view = ArticleDetailsCongigurator.createModule()
+    func push(from: Viewable, imageUrl: String, title: String, text: String) {
+        let view = ArticleDetailsCongigurator.createModule(entity: ArticleDetailsEntity(imageUrl: imageUrl, title: title, text: text))
         from.push(view, animated: true)
     }
     
-    func pushOverFullScrren(from: Viewable){
-        let view = ArticleDetailsCongigurator.createModule()
-        view.modalPresentationStyle = .overFullScreen
-        from.present(view, animated: false)
-    }
 
-//    func present(from: Viewable, entryEntity: ListEntryEntity) {
-//        let nav = UINavigationController(rootViewController: view(entryEntity: entryEntity))
-//        from.present(nav, animated: true)
-//    }
 }
 
 final class ArticleDetailsRouterOutput: Routerable {

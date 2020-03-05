@@ -32,6 +32,7 @@
 		6F39204723F8ACBE0061396C /* Storyboard+initViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */; };
 		6F39204A23F8ACF10061396C /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204923F8ACF10061396C /* NSObject+ClassName.swift */; };
 		6F39204C23F8AD660061396C /* ArticleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39204B23F8AD660061396C /* ArticleListPresenter.swift */; };
+		6FA10486240AA54C0016D73A /* ArticleDetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA10485240AA54C0016D73A /* ArticleDetailsEntity.swift */; };
 		6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */; };
 		6FB4D0CF23EF30AC00B1D981 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */; };
 		6FB4D0D223EF663500B1D981 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB4D0D123EF663500B1D981 /* About.storyboard */; };
@@ -42,6 +43,7 @@
 		6FBCFBFB240A981B006BDE89 /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBCFBF6240A9818006BDE89 /* ArticleDetailsViewController.swift */; };
 		6FBCFBFC240A981B006BDE89 /* ArticleDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBCFBF7240A981A006BDE89 /* ArticleDetailsInteractor.swift */; };
 		6FBCFBFD240A981B006BDE89 /* ArticleDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBCFBF8240A981B006BDE89 /* ArticleDetailsRouter.swift */; };
+		6FBCFBFF240A9C01006BDE89 /* ArticleListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBCFBFE240A9C01006BDE89 /* ArticleListConfigurator.swift */; };
 		6FF6422F23FF243D0065E65E /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6422E23FF243D0065E65E /* LocalDataStore.swift */; };
 		6FF6423123FF24C20065E65E /* DataStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6423023FF24C20065E65E /* DataStoreService.swift */; };
 		8557889023FAFB0A00A669EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8557888E23FAFA5A00A669EB /* GoogleService-Info.plist */; };
@@ -81,6 +83,7 @@
 		6F39204623F8ACBE0061396C /* Storyboard+initViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+initViewController.swift"; sourceTree = "<group>"; };
 		6F39204923F8ACF10061396C /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		6F39204B23F8AD660061396C /* ArticleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListPresenter.swift; sourceTree = "<group>"; };
+		6FA10485240AA54C0016D73A /* ArticleDetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsEntity.swift; sourceTree = "<group>"; };
 		6FB4D0CC23EF303D00B1D981 /* Color+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Style.swift"; sourceTree = "<group>"; };
 		6FB4D0CE23EF30AC00B1D981 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		6FB4D0D123EF663500B1D981 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 		6FBCFBF6240A9818006BDE89 /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
 		6FBCFBF7240A981A006BDE89 /* ArticleDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsInteractor.swift; sourceTree = "<group>"; };
 		6FBCFBF8240A981B006BDE89 /* ArticleDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsRouter.swift; sourceTree = "<group>"; };
+		6FBCFBFE240A9C01006BDE89 /* ArticleListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListConfigurator.swift; sourceTree = "<group>"; };
 		6FF6422E23FF243D0065E65E /* LocalDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
 		6FF6423023FF24C20065E65E /* DataStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreService.swift; sourceTree = "<group>"; };
 		8557888E23FAFA5A00A669EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 			children = (
 				6F28FBDE240453AF000C19CB /* Cell */,
 				6F22A9A223EF13C40070FDAF /* ArticleListViewController.swift */,
+				6FBCFBFE240A9C01006BDE89 /* ArticleListConfigurator.swift */,
 				6F39204B23F8AD660061396C /* ArticleListPresenter.swift */,
 				6F23F45D23F984570047B9AB /* ArticleListRouter.swift */,
 				6F23F46123F991430047B9AB /* ArticleListInteractor.swift */,
@@ -291,6 +296,7 @@
 				6FBCFBF4240A9816006BDE89 /* ArticleDetailsPresenter.swift */,
 				6FBCFBF8240A981B006BDE89 /* ArticleDetailsRouter.swift */,
 				6FBCFBF6240A9818006BDE89 /* ArticleDetailsViewController.swift */,
+				6FA10485240AA54C0016D73A /* ArticleDetailsEntity.swift */,
 			);
 			path = ArticleDetails;
 			sourceTree = "<group>";
@@ -434,9 +440,11 @@
 				6F22A9A323EF13C40070FDAF /* ArticleListViewController.swift in Sources */,
 				6F22A99D23EF13190070FDAF /* RootTabBarController.swift in Sources */,
 				6FBCFBFA240A981B006BDE89 /* ArticleDetailsConfigurator.swift in Sources */,
+				6FA10486240AA54C0016D73A /* ArticleDetailsEntity.swift in Sources */,
 				6F39204C23F8AD660061396C /* ArticleListPresenter.swift in Sources */,
 				6FF6423123FF24C20065E65E /* DataStoreService.swift in Sources */,
 				6F39204523F896600061396C /* ApiError.swift in Sources */,
+				6FBCFBFF240A9C01006BDE89 /* ArticleListConfigurator.swift in Sources */,
 				6FB4D0CD23EF303D00B1D981 /* Color+Style.swift in Sources */,
 				85DC58D524056FB20076BACA /* ArticleListTableViewCell.swift in Sources */,
 				6F39202F23F86CAC0061396C /* Routerable.swift in Sources */,
